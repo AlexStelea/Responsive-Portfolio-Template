@@ -1,31 +1,295 @@
-#navbar{
-	width: 100%;
-	height: 100px;
-	background-color: white;
-	border-bottom: 1px solid #000;
-	box-shadow: 0 4px 2px -2px grey;
-
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
 }
-#navbar #innernav{
-	width: 1200px;
-	height: 90px;
-	margin: 0 auto;
-	background-color: red;
+body {
+  background-color: #f2f2f2;
 }
-
-#intro h1{
-	font-size: 40px;
+@media (max-width: 900px) {
+  div.bio-bit:nth-child(5) p,
+  div.bio-bit:nth-child(6) p {
+    margin-left: 35px;
+  }
+  .bio-bit {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .bio-bit p {
+    font-size: 12px;
+  }
+  .words-of-truth {
+    width: 100%;
+    line-height: 20px;
+  }
+  .words-of-truth p {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 12px;
+  }
+  .projects-container {
+    text-align: center;
+    height: auto;
+  }
+  .projects-container .projects {
+    text-align: center;
+    width: 100%;
+  }
+  .projects-container .projects p {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 12px;
+    line-height: 20px;
+    width: 80%;
+  }
+  .projects-container .projects img {
+    float: none;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    vertical-align: middle;
+    margin-bottom: 10px;
+  }
+  .projects-container .contact {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
+.header {
+  width: 100%;
+  background: #702e8c;
+  /* Old browsers */
 
-.circle{
-	border-radius: 100px;
-	height: 200px;
-	width: 200px;
-	border: 1px solid #000;
+  background: -moz-linear-gradient(top, #702e8c 0%, #6333a6 100%);
+  /* FF3.6+ */
 
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #702e8c), color-stop(100%, #6333a6));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, #702e8c 0%, #6333a6 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, #702e8c 0%, #6333a6 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, #702e8c 0%, #6333a6 100%);
+  /* IE10+ */
+
+  background: linear-gradient(to bottom, #702e8c 0%, #6333a6 100%);
+  /* W3C */
+
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#702e8c', endColorstr='#6333a6', GradientType=0);
+  /* IE6-9 */
+  height: 360px;
+  text-align: center;
 }
-.twitter{
-	height: 100px;
-	width: 100px;
-	background-color: blue;
+.header .me-placeholder {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  border-radius: 50px;
+  border: 2px solid #f2f2f2;
+  margin-left: auto;
+  margin-right: auto;
+  top: 40px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.header .me {
+  width: 96px;
+  top: -2px;
+  left: -2px;
+  position: relative;
+  border-radius: 50px;
+  border: 2px solid #f2f2f2;
+}
+.header a {
+  color: rgba(242, 242, 242, 0.4);
+  text-decoration: none;
+  position: relative;
+  top: 50px;
+}
+.header a:hover {
+  color: rgba(242, 242, 242, 0.2);
+}
+.header h1 {
+  color: #f2f2f2;
+  font-size: 60px;
+  line-height: 1;
+  position: relative;
+  top: 50px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.header h2 {
+  color: #f2f2f2;
+  font-size: 18px;
+  position: relative;
+  top: 50px;
+  line-height: 18px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.projects-container {
+  width: 100%;
+  background-color: #f2f2f2;
+  min-height: 750px;
+}
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  height: auto;
+  overflow: hidden;
+}
+.words-of-truth {
+  width: 100%;
+  padding-top: 50px;
+  font-size: 16px;
+  padding-bottom: 50px;
+  background-color: #f2c48d;
+  font-family: 'Merriweather', serif;
+  line-height: 24px;
+}
+.words-of-truth p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.bio-info-section {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #f2f2f2;
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  line-height: 22px;
+}
+.bio-info-section .bio-bit {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.bio-info-section .bio-bit .icon-decoration {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  margin-right: 5px;
+  background-color: #6333a6;
+  float: left;
+}
+.bio-info-section .bio-bit .icon-decoration span {
+  position: relative;
+  color: #f2f2f2;
+  top: 3px;
+  left: 7px;
+}
+.bio-info-section .bio-bit p {
+  position: relative;
+  top: 4px;
+}
+.share-icons {
+  display: block;
+  text-align: center;
+  float: none;
+  margin: 10px auto 0;
+  padding: 0;
+  width: 180px;
+  height: 30px;
+  color: rgba(242, 242, 242, 0.4);
+  font-size: 30px;
+}
+.share-icons span img {
+  float: left;
+}
+.projects {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  float: left;
+  width: 100%;
+}
+.projects p {
+  width: 650px;
+  height: auto;
+  text-align: left;
+  display: block;
+  float: left;
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  line-height: 22px;
+}
+.projects img {
+  width: 140px;
+  float: left;
+  margin-right: 10px;
+  display: block;
+  color: black;
+}
+.ted img {
+  margin-top: 30px;
+}
+.aggie img {
+  width: 100px;
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+.cp img {
+  margin-top: 30px;
+}
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 50px;
+  border-radius: 40px;
+}
+.logo-image {
+  height: 40px;
+  background-color: rgba(242, 242, 242, 0.4);
+  border-radius: 40px;
+  padding: 5px;
+}
+#intro h1 {
+  font-size: 40px;
+}
+.circle {
+  border-radius: 100px;
+  height: 200px;
+  width: 200px;
+}
+.twitter {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+}
+.contact {
+  width: 100%;
+  margin-top: 50px;
+  background-color: #f2c48d;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  line-height: 22px;
+}
+.contact div {
+  margin: 0 auto;
+  max-width: 800px;
+}
+.contact div a {
+  color: #6333a6;
+  font-size: 30px;
+  text-decoration: none;
+}
+.contact div a:hover {
+  color: #b394de;
+}
+.contact .sharing-footer {
+  width: 180px;
+  margin: 0 auto;
+  margin-top: 10px;
 }
