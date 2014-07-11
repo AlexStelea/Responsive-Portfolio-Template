@@ -1,127 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>Alex Stelea - Junior Software Enginner (Atlanta)</title>
-	<meta charset="utf-8">
-	<meta name="description" content="Alex Stelea - Junior Software Engineer at Prezi. Sophomore at Georgia Tech. A summary of past work &#38; projects."/>
-	<meta http-equiv="X-UA-Compatible" content="IE=9" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/icons.css">
-	<link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+    <title>Alex Stelea - Software Engineer (Georgia Tech)</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Alex Stelea - Software Engineer. Junior at Georgia Tech. A summary of past work &#38; projects." />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/icons.css">
+    <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="stellar.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(".logo").click(function() {
+            $('body').animate({
+                scrollTop: 0
+            }, '500', 'swing');
+
+        })
+        var oldWidth = 0;
+
+        var rows_clicked = {
+            0: false,
+            1: false,
+            2: false,
+        }
+
+        elementOpened = false;
+        $('.projects').click(function() {
+
+            var elem = $(this);
+            var rownum = $(this).attr("rownum");
+            var otherDivs = $(".projects").not(this);
+
+
+            // open the div
+            if (!elementOpened) {
+                elem.find("p").show();
+
+                elementOpened = elem;
+                elem.width("50%");
+                elem.height("300px");
+
+
+            } else {
+                $(elementOpened).find("p").hide();
+
+                $(elementOpened).width("25%");
+                $(elementOpened).height("160px");
+
+                elementOpened = false;
+
+            }
+            // elem.height("140px");
+            // $.each(otherDivs, function(i, item) {
+            //     // console.log($(item).attr("rownum"))
+            //     // console.log(a);
+
+            //     if ($(item).attr("rownum") == rownum) {
+
+            //         var firstDivInRow = $("div[rownum=" + rownum + "]").first();
+
+            //         if (rows_clicked[rownum] == false) {
+            //             $("*", item).not("p").toggle();
+            //             if (firstDivInRow != elem) {
+            //                 elem.prependTo($(firstDivInRow).parent());
+            //                 rows_clicked[rownum] = true;
+            //             }
+            //         } else {
+            //             rows_clicked[rownum] = true;
+            //         }
+            //     }
+            // })
+
+            // $(this).find("p").toggle();
+
+            // console.log($(this).find("p"));
+
+            // b.toggle();
+
+            // console.log(b);
+
+
+
+        });
+    });
+    </script>
 </head>
+
 <body>
 
-	<div class="logo">
-		<img class="logo-image" src="img/logo.png">
-	</div>
+    <div class="logo">
+        <img class="logo-image" src="http://alexstelea.com/img/logo.png">
+    </div>
 
-	<div class="header">
-		<div class="me-placeholder">
-			<img class="me" src="img/stelea.png">
-		</div>
-		<h1>Alex Stelea</h1>
-		<h2>Junior Software Engineer, currently at Prezi</h2>
-		<div class="share-icons">
-			<a href="mailto:alex.stelea@gmail.com" target="_blank" title="Gmail"><span class="entypo-paper-plane"></span></a>
-			<a href="http://www.github.com/alexstelea" target="_blank" title="Github"><span class="entypo-github-circled"></span></a>
-			<a href="http://www.linkedin.com/in/alexstelea" target="_blank" title="LinkedIn"><span class="entypo-linkedin-circled"></span></a>
-			<a href="http://www.twitter.com/alex_stelea" target="_blank" title="Twitter"><span class="entypo-twitter-circled"></span></a>
-			<a href="http://www.facebook.com/alex.stelea" target="_blank" title="Facebook"><span class="entypo-facebook-circled"></span></a>
-		</div>
-	</div>
+    <div class="header" data-type="background" data-speed="10">
+        <div class="anime "></div>
+        <div class="me-placeholder ">
+            <img class="me " src="img/alex.png ">
+        </div>
 
-	<div class="bio-info-section">
+        <h1>Alex Stelea</h1>
+        <h2>Computer Science @ Georgia Tech</h2>
+        <div class="share-icons">
+            <a href="mailto:alex.stelea@gmail.com " target="_blank " title="Gmail ">
+                <span class="entypo-paper-plane "></span>
+            </a>
+            <a href="http://www.github.com/alexstelea " target="_blank " title="Github ">
+                <span class="entypo-github-circled "></span>
+            </a>
+            <a href="http://www.linkedin.com/in/alexstelea " target="_blank " title="LinkedIn ">
+                <span class="entypo-linkedin-circled "></span>
+            </a>
+            <a href="http://www.twitter.com/alex_stelea " target="_blank " title="Twitter ">
+                <span class="entypo-twitter-circled "></span>
+            </a>
+            <a href="http://www.facebook.com/alex.stelea " target="_blank " title="Facebook ">
+                <span class="entypo-facebook-circled "></span>
+            </a>
+        </div>
+    </div>
+    <div class="bio-info-section ">
 
-		<div class="bio-bit">
-			<div class="icon-decoration">
-				<span class="entypo-globe"></span>
-			</div>
-			<p>Atlanta, Georgia</p>
-		</div>
-		<div class="bio-bit">
-			<div class="icon-decoration">
-				<span class="entypo-graduation-cap"></span>
-			</div>
-			<p>Computer Science '16, Georgia Tech</p>
-		</div>
-		<div class="bio-bit">
-			<div class="icon-decoration">
-				<span class="entypo-suitcase"></span>
-			</div>
-			<p>Prezi, Carlsson Portfolio</p>
-		</div>
-		<div class="bio-bit">
-			<div class="icon-decoration">
-				<span class="entypo-language"></span>
-			</div>
-			<p>English, Romanian, Spanish, French</p>
-		</div> 
-		<div class="bio-bit">
-			<div class="icon-decoration">
-				<span class="entypo-network"></span>
-			</div>
-			<p>T&M Denning Technology & Management Scholar, Grand Challenges Living Learning Community, Undergraduate Research Assistant (PURA recipient)</p>
-		</div>
-		<div class="bio-bit">
-			<div class="icon-decoration">
-				<span class="entypo-megaphone"></span>
-			</div>
-			<p>TEDxYouth '10: Social Media and Tablet Technology in Revolutionizing Classroom Technology</p>
-		</div>
-	</div>
+        <div class="bio-bit ">
+            <div class="icon-decoration ">
+                <span class="entypo-globe "></span>
+            </div>
+            <p>Atlanta, Georgia</p>
+        </div>
+        <div class="bio-bit ">
+            <div class="icon-decoration ">
+                <span class="entypo-graduation-cap "></span>
+            </div>
+            <p>Computer Science '16, Georgia Tech (Age: 20)</p>
+        </div>
+        <div class="bio-bit ">
+            <div class="icon-decoration ">
+                <span class="entypo-suitcase "></span>
+            </div>
+            <p>Jawbone, Prezi, Carlsson Portfolio</p>
+        </div>
+        <div class="bio-bit ">
+            <div class="icon-decoration ">
+                <span class="entypo-language "></span>
+            </div>
+            <p>English, Romanian, Spanish, French</p>
+        </div>
+        <div class="bio-bit ">
+            <div class="icon-decoration ">
+                <span class="entypo-network "></span>
+            </div>
+            <p>T&M Denning Technology & Management Scholar, Grand Challenges Member</p>
+        </div>
+        <div class="bio-bit ">
+            <div class="icon-decoration ">
+                <span class="entypo-trophy "></span>
+            </div>
+            <p>Georgia Tech Outstanding Sophomore Award, President's Undegraduate Research Award</p>
+        </div>
+        <div class="bio-bit ">
+            <div class="icon-decoration ">
+                <span class="entypo-megaphone "></span>
+            </div>
+            <p>TEDxYouth '10: Social Media and Tablet Technology in Revolutionizing Classroom Learning</p>
+        </div>
+    </div>
 
-	<div class="words-of-truth">
-		<p><strong>People are a key part of my life, both personally and professionaly. I'm always open to try new tasks and mistakes are my favorite learning opportunities. I truly believe in everything I create, and I try to reflect my passion through all my projects.  My career is guided by a simple quote: "It's nice to be important, but it's more important to be nice."</strong></p>
-	</div>
+    <div class="words-of-truth ">
+        <strong>
+            <p>I don't believe in fluff. I believe in breaking boundries and accepting mistakes.</p>
 
-	<div class="projects-container">
-		<div class="content">
-			
-			<div class="projects prezi">
-				
-				<img src="img/prezi.png">
-				<p>Prezi has been an incredible experience for me, I have seen this company grow from a million users to over 25 million in the two years I have been with. I have impacted many aspects of this company from finance, marketing, support, and lately product development. Working with some brilliant minds and individuals has made me understand the struggles of being successful; a fact that Prezi has been cash flow positive since the first year of operation.
-				</p>
-			</div>
+            <br>
 
-			<div class="projects ted">
-				
-				<img src="img/ted.png">
-				<p>It all started with a "What if". What if the newly released iPad and onset of social network could change and influence our world, and especially in the field of education. In hindsight, our vision is always 20/20, but at the time I examined a very controversial topic that few people were willing to accept the concepts of MOOC's and tablets. I discussed the use of social media and tablet technology in revolutionizing classroom technology, a talk that was very well received.
-				</p>
-			</div>
+            <p>I have been fortunate to work with some of the brightest minds and hottest companies, allowing me to grow as a software engineer and entrepreneur. I have extensive full-stack web development experience across multiple industries. I am currently looking for summer opportunities for the summer of 2015 in software engineering.
+            </p>
+            <br>
 
-			<div class="projects aggie">
-				
-				<img src="img/aggie.png">
-				<p>Life is not always about personal opportunities; I realized that working on software engineering for the improvement of society was a fantastic combination. My research lab at Georgia Tech focuses on international development and technology and I specialize on Aggie, a social media analytics and tracking software used in elections in Nigeria, Libya, and Kenya. It is a very powerful visualization software;  my role being  to redesign, create, and maintain the new and improved Aggie 2.0. I'm very excited to work on a project that can directly touch and improve living conditions and corruption in those regions. 
-				</p>
-			</div>
+            <p>All my work and achievements below follow this basic formula:</p>
+            <br>
 
-			<div class="projects cp">
-				<img src="img/cplogo.png">
-				<p>Carlsson Portfolio is a luxury gateway planner company that strives to offer their clients the finest in terms of luxury and quality. I was hired as the head developer for creating both the iPhone and iPad applications for their company. This is where I learned  to combine code into  a meaninful end user experience. Apple featured both my applications for CP Greece in the New & Noteworthy categories at the time of launch. 
-				</p>
-			</div>
-		</div>
-	</div>
-	
+            <h4 class="recipe">Passion + Talent + Perserverence</h4>
 
-	<div class="contact">
-		<div>
-			<p>I'd love to get in touch, you can reach me via: 
-			<div class="sharing-footer">
-				<a href="mailto:alex.stelea@gmail.com" target="_blank" title="Gmail"><span class="entypo-paper-plane"></span></a>
-				<a href="http://www.github.com/alexstelea" target="_blank" title="Github"><span class="entypo-github-circled"></span></a>
-				<a href="http://www.linkedin.com/in/alexstelea" target="_blank" title="LinkedIn"><span class="entypo-linkedin-circled"></span></a>
-				<a href="http://www.twitter.com/alex_stelea" target="_blank" title="Twitter"><span class="entypo-twitter-circled"></span></a>
-				<a href="http://www.facebook.com/alex.stelea" target="_blank" title="Facebook"><span class="entypo-facebook-circled"></span></a>
-			</div>
-			
-		</div>
-	</div>
+            </p>
+
+        </strong>
+    </div>
+
+    <div class="projects-container group">
+
+        <div class="projects jawbone quarter-width group" pos=0 rownum=1>
+            <div class="full-height group">
+                <div class="image-block">
+
+                    <img data-id="jawbone-text" src="http://gsvcap.com/wp/wp-content/uploads/2013/06/Jawbone.png">
+                </div>
+                <h4>Software Engineering Intern - Algorithms</h4>
+                <h5>May-August 2014</h5>
+                <p>In Kazakhstan, it is illegal for more than five woman to be in the same place except for in brothel or in grave. In US and A, many womens meet in a groups called feminists.Kazakhstan is the greatest country in the world. All other countries are run by little girls. Kazakhstan is number one exporter of potassium. Other Central Asian countries have inferior potassium. Kazakhstan is the greatest country in the world. All other countries is the home of the gays.</p>
+
+            </div>
+        </div>
+
+
+
+        <div class="projects gatech quarter-width">
+            <div class="full-height">
+
+                <div class="image-block">
+                    <img data-id="gatech-text" src="http://etv.gatech.edu/wp-content/themes/etv-theme/gt-logo.png">
+                </div>
+                <h4>Outstanding Sophomore Award</h4>
+                <h5>April 2014</h5>
+                <p>Yagshemash! In US and A, if you want to marry a girl, you cannot just go to her father's house and swap her for 15 gallons of insecticide. Before American woman will allow you in her vazhïn, you must do something called dating. Yagshemash! Democracy is very different in US and A from Kazakhstan. In America, woman CAN vote, but horse - CANNOT!</p>
+            </div>
+
+        </div>
+
+
+        <div class="projects prezi quarter-width">
+            <div class="full-height">
+
+                <div class="image-block">
+                    <img data-id="prezi-text" src="https://prezi-a.akamaihd.net/zuisite-versioned/800/common/img/logo-horizontal.png">
+                </div>
+                <h4>Software Engineering Intern - Growth</h4>
+                <h5>May-July 2013</h5>
+                <p>As Prezi's first intern, I have seen this company grow from a million users to over 30 million in the two years I have been with. I have impacted many aspects of this company from finance, marketing, support, and lately product development. Working with some brilliant minds and individuals has made me understand the struggles of being successful; a fact that Prezi has been cash flow positive since the first year of operation.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="projects boa quarter-width">
+            <div class="full-height">
+
+                <div class="image-block">
+                    <img data-id="boa-text" src="http://upload.wikimedia.org/wikipedia/en/8/82/Bank_of_America_Merrill_Lynch.png">
+                </div>
+                <h4>International Grand Prize</h4>
+
+                <h5>April 2014</h5>
+                <p>It is three in the morning, and I am in the nest of Jews. They have cleverly shifted their shapes; one of them has taken the form of a little old woman. You can barely see her horns! She has tried to poison me already. These rats are very clever. This is my country of Kazakhstan. It locate between Tajikistan, and Kyrgyzstan, and assholes Uzbekistan.
+                </p>
+            </div>
+
+        </div>
+        <div class="projects bynd quarter-width">
+            <div class="full-height">
+
+                <div class="image-block">
+                    <img data-id="bynd-text" src="http://www.itu.int/PublishingImages/event_focus/BYND-logo-web.png">
+                </div>
+                <h4>Educational First Place, Second Place Globally</h4>
+
+                <h5>April 2014</h5>
+                <p>An award given annualy to a freshmen demonstrating extraordianry leadership and academeic performance</p>
+            </div>
+
+        </div>
+        <div class="projects aggie quarter-width">
+            <div class="full-height">
+                <div class="image-block">
+                    <img data-id="aggie-text" src="http://alexstelea.com/img/aggie.png ">
+                </div>
+                <h4>Aggie</h4>
+                <h5>April 2014</h5>
+                <p>He is my neighbor Nursultan Tuliagby. He is pain in my assholes. I get a window from a glass, he must get a window from a glass. I get a step, he must get a step. I get a clock radio, he cannot afford. Great success! It is three in the morning, and I am in the nest of Jews. They have cleverly shifted their shapes; one of them has taken the form of a little old woman. You can barely see her horns! She has tried to poison me already. These rats are very clever.</p>
+            </div>
+
+        </div>
+
+        <div class="projects ted quarter-width">
+            <div class="full-height">
+
+                <div class="image-block">
+                    <img data-id="ted-text" src="http://alexstelea.com/img/ted.png">
+                </div>
+                <h4>TEDx</h4>
+                <h5>April 2014</h5>
+                <p>He is my neighbor Nursultan Tuliagby. He is pain in my assholes. I get a window from a glass, he must get a window from a glass. I get a step, he must get a step. I get a clock radio, he cannot afford. Great success! It is three in the morning, and I am in the nest of Jews. They have cleverly shifted their shapes; one of them has taken the form of a little old woman. You can barely see her horns! She has tried to poison me already. These rats are very clever.</p>
+            </div>
+
+        </div>
+
+        <div class="projects cp quarter-width">
+            <div class="full-height">
+
+                <div class="image-block">
+                    <img data-id="cp-text" src="http://alexstelea.com/img/cplogo.png ">
+                </div>
+                <h4>TEDx</h4>
+                <h5>April 2014</h5>
+                <p>He is my neighbor Nursultan Tuliagby. He is pain in my assholes. I get a window from a glass, he must get a window from a glass. I get a step, he must get a step. I get a clock radio, he cannot afford. Great success! It is three in the morning, and I am in the nest of Jews. They have cleverly shifted their shapes; one of them has taken the form of a little old woman. You can barely see her horns! She has tried to poison me already. These rats are very clever.</p>
+            </div>
+        </div>
+        <!--   <div class="projects cp full-width">
+<div class="image-block">
+</div>
+<h4>To be continued...</h4>
+<h5>Last Updated July 2014</h5>
+<p>A talk on use of social media and</p>
+</div> -->
+
+
+        <!-- <div class="projects prezi">
+<img data-id="prezi-text" src="http://alexstelea.com/img/prezi.png">
+<div id="prezi-text" class="turnon">
+<p>Prezi has been an incredible experience for me, I have seen this company grow from a million users to over 30 million in the two years I have been with. I have impacted many aspects of this company from finance, marketing, support, and lately product development. Working with some brilliant minds and individuals has made me understand the struggles of being successful; a fact that Prezi has been cash flow positive since the first year of operation.
+</p>
+</div>
+
+
+<div class="projects boa">
+<img data-id="boa-text" src="http://upload.wikimedia.org/wikipedia/en/8/82/Bank_of_America_Merrill_Lynch.png">
+
+</div>
+<div id="boa-text" class="turnon">
+<p>Part of an interdisciplanary group of ten, my team won the grand prize in the international bank of America .
+</p>
+</div>
+
+<div class="projects bynd">
+<img data-id="bynd-text" src="http://www.itu.int/PublishingImages/event_focus/BYND-logo-web.png">
+</div>
+<div id="bynd-text" class="turnon">
+<p>Hackathon</p>
+</div>
+
+
+<div class="projects ted ">
+<img data-id="ted-text" src="http://alexstelea.com/img/ted.png">
+
+</div>
+<div id="ted-text" class="turnon">
+<p>It all started with a "What if ". What if the newly released iPad and onset of social network could change and influence our world, and especially in the field of education. In hindsight, our vision is always 20/20, but at the time I examined a very controversial topic that few people were willing to accept the concepts of MOOC's and tablets. I discussed the use of social media and tablet technology in revolutionizing classroom technology, a talk that was very well received.
+</p>
+</div>
+
+<div class="projects aggie ">
+
+<img data-id="aggie-text" src="http://alexstelea.com/img/aggie.png ">
+
+</div>
+<div id="aggie-text" class="turnon">
+<p>Life is not always about personal opportunities; I realized that working on software engineering for the improvement of society was a fantastic combination. My research lab at Georgia Tech focuses on international development and technology and I specialize on Aggie, a social media analytics and tracking software used in elections in Nigeria, Libya, and Kenya. It is a very powerful visualization software; my role being to redesign, create, and maintain the new and improved Aggie 2.0. I'm very excited to work on a project that can directly touch and improve living conditions and corruption in those regions.
+</p>
+</div>
+
+<div class="projects cp">
+<img data-id="cp-text" src="http://alexstelea.com/img/cplogo.png ">
+</div>
+<div id="cp-text" class="turnon">
+<p>Carlsson Portfolio is a luxury gateway planner company that strives to offer their clients the finest in terms of luxury and quality. I was hired as the head developer for creating both the iPhone and iPad applications for their company. This is where I learned to combine code into a meaninful end user experience. Apple featured both my applications for CP Greece in the New & Noteworthy categories at the time of launch.
+</p>
+</div> -->
+    </div>
+    </div>
+
+
+    <div class="contact ">
+        <div>
+            <p>I'd love to get in touch, you can reach me via or get my <a href="#">resume</a>:
+                <div class="sharing-footer ">
+                    <a href="mailto:alex.stelea@gmail.com " target="_blank " title="Gmail ">
+                        <span class="entypo-paper-plane "></span>
+                    </a>
+                    <a href="http://www.github.com/alexstelea " target="_blank " title="Github ">
+                        <span class="entypo-github-circled "></span>
+                    </a>
+                    <a href="http://www.linkedin.com/in/alexstelea " target="_blank " title="LinkedIn ">
+                        <span class="entypo-linkedin-circled "></span>
+                    </a>
+                    <a href="http://www.twitter.com/alex_stelea " target="_blank " title="Twitter ">
+                        <span class="entypo-twitter-circled "></span>
+                    </a>
+                    <a href="http://www.facebook.com/alex.stelea " target="_blank " title="Facebook ">
+                        <span class="entypo-facebook-circled "></span>
+                    </a>
+                </div>
+
+        </div>
+    </div>
 </body>
+
 </html>
