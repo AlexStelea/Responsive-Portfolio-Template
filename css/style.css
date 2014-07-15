@@ -322,13 +322,13 @@ body {
     font-family:'Merriweather', serif;
     display: none;
     height: 270px;
-    max-width: 60%;
+    max-width: 55%;
     overflow-x: hidden;
     overflow-y: visible;
     font-weight: 400;
     line-height: 22px;
     position: relative;
-    left: 37%;
+    left: 45%;
     top: -40%;
 }
 .projects .image-block {
