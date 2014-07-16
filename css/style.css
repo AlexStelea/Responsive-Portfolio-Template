@@ -6,7 +6,6 @@
     display: table;
     clear: both;
 }
-
 .recipe {
     font-family:'Oswald', sans-serif;
     text-align: center;
@@ -14,148 +13,11 @@
     text-shadow: 4px 4px 6px rgba(255, 255, 255, 0.1);
     font-size: 46px;
     line-height: 46px;
-}
-.anime {
-    border: 10px solid #fff601;
-    background: transparent;
-    -webkit-border-radius: 60px;
-    -moz-border-radius: 60px;
-    border-radius: 150px;
-    height: 300px;
-    width: 300px;
-    -webkit-animation: pulse 3s ease-in-out;
-    -moz-animation: pulse 3s ease-out;
-    animation: pulse 3s ease-in-out;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 1;
-    opacity: 0;
-}
-@-moz-keyframes pulse {
-    0% {
-        -moz-transform: scale(3) opacity: 0.0;
-    }
-    25% {
-        -moz-transform: scale(0);
-        opacity: 0.1;
-    }
-    50% {
-        -moz-transform: scale(0.1);
-        opacity: 0.3;
-    }
-    75% {
-        -moz-transform: scale(0.3);
-        opacity: 0.5;
-    }
-    100% {
-        -moz-transform: scale(1);
-        opacity: 0.0;
-    }
-}
-@-webkit-keyframes"pulse" {
-    0% {
-        -webkit-transform: scale(0);
-        opacity: 0.0;
-    }
-    /*25% {
-        -webkit-transform: scale-x(0);
-        opacity: 0.1;
-    }
-    50% {
-        -webkit-transform: scale(0.1);
-        opacity: 0.3;
-    }
-    75% {
-        -webkit-transform: scale-x(0.3);
-        opacity: 0.5;
-    }*/
-    100% {
-        -webkit-transform: scale(0.4);
-        opacity: 0.4;
-    }
+    margin-left: 10%;
+    margin-right: 5%;
 }
 body {
     background-color: #f2f2f2;
-}
-@media (max-width: 900px) {
-    .quarter-width {
-        width: 100% !important;
-    }
-    .half-width {
-        width: 100% !important;
-    }
-    .full-width {
-        width: 100% !important;
-    }
-    div.bio-bit:nth-child(5) p, div.bio-bit:nth-child(6) p {
-        margin-left: 35px;
-    }
-    .bio-bit {
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-    .bio-bit p {
-        font-size: 12px;
-    }
-    .words-of-truth {
-        width: 100%;
-        line-height: 20px;
-    }
-    .words-of-truth p {
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-        font-size: 12px;
-    }
-    .projects-container {
-        text-align: center;
-        height: auto;
-        clear: both;
-        float: none;
-    }
-    .projects-container .projects {
-        text-align: center;
-        width: 100%;
-        float: left;
-        background-color: rgba(201, 231, 203, 0.5);
-    }
-    .projects-container .projects:hover {
-        background-color: rgba(201, 201, 10, 0.5);
-    }
-    .projects-container .projects p {
-        margin-left: 10%;
-        margin-right: 10%;
-        font-size: 12px;
-        line-height: 20px;
-        width: 80%;
-    }
-    .projects-container .projects img {
-        float: left;
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-        vertical-align: middle;
-    }
-    .projects-container .contact {
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-    .projects-container h4 {
-        margin-top: 100px;
-        float: left;
-        margin-left: -110px
-    }
-    .projects-container h5 {
-        margin-top: 115px;
-        float: left;
-        margin-left: -110px
-    }
 }
 .header {
     width: 100%;
@@ -167,29 +29,29 @@ body {
     position: relative;
 }
 .header .me-placeholder {
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
     position: relative;
     border-radius: 120px;
     border: 2px solid #f2f2f2;
     margin-left: auto;
     margin-right: auto;
-    top: -100px;
+    top: 230px;
     margin-bottom: 20px;
     overflow: hidden;
     z-index: 9999;
 }
 .header .me {
-    width: 170px;
-    top: -45px;
-    left: -10px;
+    width: 140px;
+    top: -35px;
+    left: -2px;
     position: relative;
     border-radius: 120px;
     z-index: 9999;
     border: 2px solid #f2f2f2;
 }
 .header a {
-    color: rgba(99, 51, 166, 0.7);
+    color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
     position: relative;
     top: 50px;
@@ -202,7 +64,7 @@ body {
     font-size: 60px;
     line-height: 1;
     position: relative;
-    top: -470px;
+    top: -130px;
     text-align: center;
     font-family:'Oswald', sans-serif;
     text-transform: uppercase;
@@ -212,7 +74,7 @@ body {
     color: #f2f2f2;
     font-size: 18px;
     position: relative;
-    top: -470px;
+    top: -130px;
     line-height: 18px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -277,7 +139,7 @@ body {
     display: block;
     text-align: center;
     float: none;
-    margin: -530px auto 0;
+    margin: -170px auto 0;
     padding: 0;
     width: 200px;
     height: 30px;
@@ -298,31 +160,27 @@ body {
 .projects {
     font-size: 14px;
     float: left;
-    height: 160px;
+    min-height: 160px;
 }
 .projects:hover {
     background-color: rgba(182, 209, 93, 0.6);
 }
 .projects .full-height {
-/*  background-color: pink;
-*/  height: 100%;
-  width: auto;
+    height: 100%;
+    width: auto;
 }
-
 .projects-container:hover > div {
-  opacity: 0.3;
+    opacity: 0.3;
 }
-
 .projects-container:hover > div:hover {
-  opacity: 1.0;
-  cursor: pointer;
+    opacity: 1.0;
+    cursor: pointer;
 }
-
 .projects p {
     font-family:'Merriweather', serif;
     display: none;
     height: 270px;
-    max-width: 55%;
+    max-width: 50%;
     overflow-x: hidden;
     overflow-y: visible;
     font-weight: 400;
@@ -352,21 +210,26 @@ body {
     margin-left: 20px;
     margin-top: 10px;
     font-weight: 100;
-
 }
 .prezi img {
     margin-top: 20px;
     margin-bottom: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
     width: 140px;
 }
-.jawbone img {}
+.hive img {
+    margin-top: 10px;
+    height: 80px;
+    margin-left: 30px;
+}
 .boa img {
-    margin-top: 20px;
-    margin-left: 25px;
+    margin-top: 35px;
+    margin-bottom: -20px;
+    margin-left: 15px;
 }
 .ted img {
     margin-top: 30px;
+    margin-left: 15px;
 }
 .aggie img {
     width: 100px;
@@ -376,6 +239,7 @@ body {
 }
 .cp img {
     margin-top: 30px;
+    margin-left: 15px;
 }
 .bynd img {
     margin-left: 30px;
@@ -410,7 +274,6 @@ body {
 }
 .contact {
     width: 100%;
-    margin-top: 50px;
     background-color: #F2E7C4;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -423,7 +286,7 @@ body {
     margin: 0 auto;
     max-width: 800px;
 }
-.contact div a {
+.contact div .sharing-footer a {
     color: #6333a6;
     font-size: 30px;
     text-decoration: none;
@@ -432,7 +295,95 @@ body {
     color: #b394de;
 }
 .contact .sharing-footer {
-    width: 180px;
+    width: 190px;
     margin: 0 auto;
     margin-top: 10px;
+}
+@media (max-width: 900px) {
+    .quarter-width {
+        width: 100% !important;
+    }
+    .half-width {
+        width: 100% !important;
+    }
+    .full-width {
+        width: 100% !important;
+    }
+    .logo {
+        display: none;
+    }
+    .header h1 {
+      margin-top: 50px;
+    }
+    .header .me-placeholder {
+        width: 100px;
+        height: 100px;
+        top: 250px;
+    }
+    .recipe {
+      margin-left: 5%
+    }
+    .header {
+        background: url(../img/bg.jpg) repeat fixed;
+    }
+    .header .me {
+        width: 140px;
+        left: -10px;
+    }
+    div.bio-bit:nth-child(5) p, div.bio-bit:nth-child(6) p {
+        margin-left: 35px;
+    }
+    .bio-bit {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .bio-bit p {
+        font-size: 12px;
+    }
+    .words-of-truth {
+        width: 100%;
+        line-height: 20px;
+    }
+    .words-of-truth p {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 12px;
+    }
+    .projects-container {
+        text-align: center;
+        height: auto;
+        clear: both;
+        float: none;
+    }
+    .projects-container .projects {
+        text-align: center;
+        width: 100%;
+        float: left;
+        height: auto;
+    }
+    .projects-container .projects p {
+        margin: 10px auto 0 auto;
+        top: 0;
+        left: 0;
+        margin-left: 5%;
+        margin-right: 5%;
+        max-width: 90%;
+        position: relative;
+    }
+    .projects-container .projects .image-block {
+        margin: 0 auto;
+    }
+    .projects-container .contact {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .projects-container .projects h4 {
+        margin: 0 auto;
+    }
+    .projects-container .projects h5 {
+        margin: 0 auto;
+    }
 }
