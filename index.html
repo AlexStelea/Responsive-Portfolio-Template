@@ -24,6 +24,10 @@
             }, '500', 'swing');
 
         });
+        $('.projects').each(function() {
+            var hue = 'rgba(' + (Math.floor((256 - 199) * Math.random()) + 200) + ',' + (Math.floor((256 - 199) * Math.random()) + 200) + ',' + (Math.floor((256 - 199) * Math.random()) + 200) + ',' + 0.8 + ')';
+            $(this).css("border-bottom", "4px solid " + hue);
+        });
         window.mobilecheck = function() {
             var check = false;
             (function(a) {
@@ -142,7 +146,7 @@
 
     <div class="words-of-truth ">
         <strong>
-            <p>I don't believe in fluff. I believe in breaking boundries and accepting mistakes.</p>
+            <p>I don't believe in fluff. I believe in breaking boundries and accepting mistakes. I'm a do'er.</p>
 
             <br>
 
@@ -159,13 +163,16 @@
 
         </strong>
     </div>
+    <div class="words-of-truth" style="text-align:center;
+        height: 0px; border-bottom: 2px solid #999999;">Click boxes below to expand</div>
 
     <div class="projects-container group">
+
 
         <div class="projects jawbone quarter-width group" pos=0 rownum=1>
             <div class="full-height group">
                 <div class="image-block">
-                    <img data-id="jawbone-text" src="http://gsvcap.com/wp/wp-content/uploads/2013/06/Jawbone.png">
+                    <img data-id="jawbone-text" src="img/jawbone.png">
                 </div>
                 <h4>Software Engineering Intern - Algorithms</h4>
                 <h5>May - August 2014</h5>
@@ -175,7 +182,7 @@
         <div class="projects gatech quarter-width">
             <div class="full-height">
                 <div class="image-block">
-                    <img data-id="gatech-text" src="http://etv.gatech.edu/wp-content/themes/etv-theme/gt-logo.png">
+                    <img data-id="gatech-text" src="img/gt-logo.png">
                 </div>
                 <h4>Outstanding Sophomore Award</h4>
                 <h5>April 2014</h5>
@@ -185,7 +192,7 @@
         <div class="projects prezi quarter-width">
             <div class="full-height">
                 <div class="image-block">
-                    <img data-id="prezi-text" src="https://prezi-a.akamaihd.net/zuisite-versioned/800/common/img/logo-horizontal.png">
+                    <img data-id="prezi-text" src="img/prezi.png">
                 </div>
                 <h4>Software Engineering Intern - Growth</h4>
                 <h5>May - July 2013</h5>
@@ -196,7 +203,7 @@
         <div class="projects boa quarter-width">
             <div class="full-height">
                 <div class="image-block">
-                    <img data-id="boa-text" src="http://upload.wikimedia.org/wikipedia/en/8/82/Bank_of_America_Merrill_Lynch.png">
+                    <img data-id="boa-text" src="img/boa.png">
                 </div>
                 <h4>International Grand Prize</h4>
                 <h5>October 2013</h5>
@@ -213,14 +220,14 @@
                 <h5>August 2013 - July 2014</h5>
                 <p>Todo</p>
             </div>
-        </div> 
+        </div>
         <div class="projects aggie quarter-width">
             <div class="full-height">
                 <div class="image-block">
                     <img data-id="aggie-text" src="img/aggie.png ">
                 </div>
                 <h4>Aggie</h4>
-                <h5>January 2013 - Current </h5>
+                <h5>January 2013 - Current</h5>
                 <p>Life is not always about personal opportunities; I realized that working on software engineering for the improvement of society was a fantastic combination. My research lab at Georgia Tech focuses on international development and technology and I specialize on Aggie, a social media analytics and tracking software used in elections in Nigeria, Libya, and Kenya. It is a very powerful visualization software; my role being to redesign, create, and maintain the new and improved Aggie 2.0. I'm very excited to work on a project that can directly touch and improve living conditions and corruption in those regions.</p>
             </div>
         </div>
@@ -247,7 +254,7 @@
         <div class="projects bynd quarter-width">
             <div class="full-height">
                 <div class="image-block">
-                    <img data-id="bynd-text" src="http://www.itu.int/PublishingImages/event_focus/BYND-logo-web.png">
+                    <img data-id="bynd-text" src="img/bynd.png">
                 </div>
                 <h4>Educational First Place, Second Place Globally</h4>
                 <h5>September 2013</h5>
@@ -260,7 +267,7 @@
 
     <div class="contact ">
         <div>
-            <p>I'd love to get in touch, you can reach me via or get my <a href="./resume.pdf">resume</a>:
+            <p>I'd love to get in touch, get my <a href="./resume.pdf">resume</a> or:
                 <div class="sharing-footer ">
                     <a href="mailto:alex.stelea@gmail.com " target="_blank " title="Gmail ">
                         <span class="entypo-paper-plane "></span>
