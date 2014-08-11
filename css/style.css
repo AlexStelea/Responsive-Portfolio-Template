@@ -243,6 +243,11 @@ body {
     margin-bottom: -20px;
     margin-left: 15px;
 }
+.huntbnb img {
+    width: 80px;
+    margin-left: 12px;
+    margin-top: 10px;
+}
 .ted img {
     margin-top: 30px;
     margin-left: 15px;
@@ -388,6 +393,8 @@ body {
         margin-left: 5%;
         margin-right: 5%;
         max-width: 90%;
+        max-height: 50%;
+        margin-bottom: 20px;
         position: relative;
     }
     .projects-container .projects .image-block {
