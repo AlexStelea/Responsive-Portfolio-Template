@@ -7,11 +7,12 @@
     clear: both;
 }
 .recipe {
-    font-family:'Oswald', sans-serif;
+    font-family:'Raleway', sans-serif;
     text-align: center;
     color: rgba(0, 0, 0, 0.6);
     text-shadow: 4px 4px 6px rgba(255, 255, 255, 0.1);
     font-size: 46px;
+    font-weight: 700;
     line-height: 46px;
     margin-left: 10%;
     margin-right: 5%;
@@ -43,7 +44,7 @@ body {
     top: 230px;
     margin-bottom: 20px;
     overflow: hidden;
-    z-index: 9999;
+    z-index: 101;
 }
 .header .me {
     width: 140px;
@@ -51,7 +52,7 @@ body {
     left: -2px;
     position: relative;
     border-radius: 120px;
-    z-index: 9999;
+    z-index: 100;
     border: 2px solid #f2f2f2;
 }
 .header a {
@@ -102,7 +103,8 @@ body {
     font-size: 16px;
     padding-bottom: 50px;
     background-color: #F2E7C4;
-    font-family:'Lato', sans-serif;
+    font-family:'Raleway', sans-serif;
+    font-weight: 200;
     border-bottom: 2px solid #999;
     line-height: 24px;
 }
@@ -116,8 +118,8 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
     background-color: #f2f2f2;
-    font-family:'Merriweather', serif;
-    font-weight: 400;
+    font-family:'Raleway', serif;
+    font-weight: 300;
     line-height: 22px;
 }
 .bio-info-section .bio-bit {
@@ -167,7 +169,7 @@ body {
 .projects {
     font-size: 14px;
     float: left;
-    min-height: 160px;
+    min-height: 158px;
 }
 /*.projects:nth-child(2n+2) {
     border-bottom: 4px solid #F2E7C4;
@@ -177,19 +179,13 @@ body {
     border-bottom: 4px solid #6333a6;
 
 }*/
-.projects:hover {
-/*    background-color: rgba(182, 209, 93, 0.6);
-*/}
+
 .projects .full-height {
     height: 97%;
     width: auto;
 }
-.projects-container:hover > div {
-}
-.projects-container:hover > div:hover {
 
-    box-shadow: inset 0 -4px 0 0 #6333a6;
-    border-bottom-style: inset;
+.projects-container:hover > div:hover {
     cursor: pointer;
 }
 .projects p {
@@ -410,5 +406,10 @@ body {
     }
     .projects-container .projects h5 {
         margin: 0 auto;
+    }
+    .huntbnb img {
+        width: 80px;
+        margin-left: 30px;
+        margin-top: 10px;
     }
 }
