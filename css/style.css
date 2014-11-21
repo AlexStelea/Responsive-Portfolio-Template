@@ -171,20 +171,17 @@ body {
     float: left;
     min-height: 158px;
 }
-/*.projects:nth-child(2n+2) {
-    border-bottom: 4px solid #F2E7C4;
-
-}
-.projects:nth-child(2n+1) {
-    border-bottom: 4px solid #6333a6;
-
-}*/
 
 .projects .full-height {
     height: 97%;
     width: auto;
 }
 
+.resume-link {
+    text-decoration: none;
+    color: #6333a6;
+    font-weight: bold;
+}
 .projects-container:hover > div:hover {
     cursor: pointer;
 }
