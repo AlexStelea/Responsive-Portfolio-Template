@@ -212,13 +212,16 @@ body {
     position: relative;
     width: 170px;
     margin-left: 20px;
+    font-family:'Raleway', sans-serif;
+    font-weight: 500;
 }
 .projects h5 {
     position: relative;
     width: 200px;
     margin-left: 20px;
-    margin-top: 10px;
-    font-weight: 100;
+    margin-top: 5px;
+    font-family:'Raleway', sans-serif;
+    font-weight: 200;
 }
 .prezi img {
     margin-top: 20px;
