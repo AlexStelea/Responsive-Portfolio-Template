@@ -8,12 +8,11 @@
 }
 .recipe {
     font-family:'Raleway', sans-serif;
-    text-align: center;
     color: rgba(0, 0, 0, 0.6);
     text-shadow: 4px 4px 6px rgba(255, 255, 255, 0.1);
-    font-size: 46px;
+    font-size: 16px;
     font-weight: 700;
-    line-height: 46px;
+    line-height: 16px;
     margin-left: 10%;
     margin-right: 5%;
 }
@@ -99,9 +98,9 @@ body {
 }
 .words-of-truth {
     width: 100%;
-    padding-top: 50px;
+    padding-top: 40px;
     font-size: 16px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     background-color: #F2E7C4;
     font-family:'Raleway', sans-serif;
     font-weight: 200;
@@ -210,10 +209,11 @@ body {
 }
 .projects h4 {
     position: relative;
-    width: 170px;
+    width: 140px;
     margin-left: 20px;
     font-family:'Raleway', sans-serif;
     font-weight: 500;
+    font-size: 12px;
 }
 .projects h5 {
     position: relative;
@@ -222,6 +222,14 @@ body {
     margin-top: 5px;
     font-family:'Raleway', sans-serif;
     font-weight: 200;
+
+}
+.microsoft img {
+    margin-top: 30px;
+    margin-left: 5px;
+}
+.jawbone img {
+    margin-top: 8px;
 }
 .prezi img {
     margin-top: 20px;
